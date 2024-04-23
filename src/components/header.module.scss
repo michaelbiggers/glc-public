@@ -1,0 +1,46 @@
+$blue: #347783;
+$yellow: #f5b721;
+$yellow-light: #{lighten($yellow, 25%)};
+$red: #d0561b;
+$brown: #817e5b;
+$neutral: #f2eee8;
+
+nav {
+  position: fixed;
+  background: $neutral;
+  width: calc(100% - 6rem);
+  padding: 0 3rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation {
+  li {
+    display:flex;
+    a {
+      text-decoration: none;
+      color: black;
+      padding: 8px 12px;
+    }
+
+    &.nav__cta {
+      background: black;
+      margin-left: auto;
+      a {
+        color: white;
+        padding: 8px 12px;
+      }
+    }
+  }
+}
+
+.logo {
+  max-width: 150px;
+  margin-right: 24px;
+}
