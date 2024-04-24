@@ -7,7 +7,9 @@ import {
   team__member,
   team__img,
   team__name,
-  team__title} from './team-bar.module.scss';
+  team__title
+} from './team-bar.module.scss';
+import TeamMember from "./team-member";
 const TeamBar = () => {
   return (
     <section className={`container-fluid ${team}`}>
@@ -17,23 +19,18 @@ const TeamBar = () => {
           <p className={team__intro}>Qualified providers, ready to work with you.</p>
         </div>
         <div className="col-xs-12 col-sm center-xs">
-          <div className={team__member}>
-            <StaticImage
-              src="../images/jacie.jpg"
-              className={team__img}
-            ></StaticImage>
-            <span className={team__name}>Jacie Currie</span>
-            <span className={team__title}>Speech Therapy & Language Pathology</span>
-          </div>
+          <TeamMember
+            img="../images/jacie.jpg"
+            name="Jacie Currie"
+            title="Speech Therapy & Language Pathology"
+          />
         </div>
         <div className="col-xs-12 col-sm center-xs">
-          <div className={team__member}>
-            <StaticImage
-              src="../images/sunny.jpg"
-              className={team__img}></StaticImage>
-            <span className={team__name}>Sunny Biggers</span>
-            <span className={team__title}>Educational Assessments</span>
-          </div>
+          <TeamMember
+            img="../images/sunny.jpg"
+            name="Sunny Biggers"
+            title="Educational Assessments"
+          />
         </div>
       </div>
     </section>
