@@ -1,0 +1,41 @@
+$blue: #347783;
+$yellow: #f5b721;
+$red: #d0561b;
+$brown: #817e5b;
+$neutral: #fbf6f2;
+$yellow-light: #{lighten($yellow, 30%)};
+.team {
+  padding:48px 24px;
+  background:$blue;
+  &__heading {
+    font-size:48px;
+    color:$neutral;
+  }
+  &__intro {
+    font-size:18px;
+    color:$neutral;
+  }
+  &__member{
+    display:flex;
+    flex-direction: column;
+    color:$neutral;
+    margin-bottom:24px;
+  }
+  &__img {
+    border-radius:36px;
+    filter:grayscale(.1);
+    max-width:200px;
+    margin:auto;
+    margin-bottom:12px;
+  }
+  &__name {
+    display: block;
+    font-size:24px;
+    font-weight:bold;
+  }
+  &__title {
+    display: block;
+    font-size:16px;
+    font-style:italic;
+  }
+}
