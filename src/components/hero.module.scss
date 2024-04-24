@@ -1,0 +1,25 @@
+.hero {
+  position: relative;
+  padding: 10vw 0;
+
+  &__heading {
+    font-size: 88px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  &__intro {
+    font-size: 32px;
+  }
+
+  &__img {
+    max-width: 250px;
+
+    @media(min-width:768px) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: max-content;
+    }
+  }
+}
