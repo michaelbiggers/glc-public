@@ -1,0 +1,58 @@
+/**
+* blue #347783
+* yellow #f5b721
+* red #d0561b
+* brown #817e5b
+* neutral #e6e1da
+**/
+$blue: #347783;
+$yellow: #f5b721;
+$red: #d0561b;
+$brown: #817e5b;
+$neutral: #fbf6f2;
+$yellow-light: #{lighten($yellow, 30%)};
+:root {
+  font-size:16px;
+}
+body {
+  background: $neutral;
+  margin:0;
+}
+.text--light {
+  color:$neutral;
+}
+/** Typography **/
+h1, h2, h3, h4 {
+  font-family: 'Lora', serif;
+}
+
+h5, p, .btn, span, li {
+  font-family: "Maven Pro", sans-serif;
+}
+p {
+  font-size:18px;
+}
+.heading--primary {
+  font-size:48px;
+}
+.btn {
+  background: $yellow;
+  padding:12px 18px;
+  border-radius:24px;
+  color:white;
+  text-decoration: none;
+}
+/** Home page **/
+.rounded-top {
+  border-radius:30px 30px 0 0;
+  margin-top:-30px;
+}
+footer {
+  background:black;
+  padding: 48px;
+}
+.btn {
+  &--primary {
+    font-size:18px;
+  }
+}

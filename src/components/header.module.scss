@@ -3,10 +3,9 @@ $yellow: #f5b721;
 $yellow-light: #{lighten($yellow, 25%)};
 $red: #d0561b;
 $brown: #817e5b;
-$neutral: #f2eee8;
+$neutral: #fbf6f2;
 
 nav {
-  position: fixed;
   background: $neutral;
   width: calc(100% - 6rem);
   padding: 0 3rem;
