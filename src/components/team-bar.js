@@ -3,14 +3,10 @@ import { StaticImage } from "gatsby-plugin-image";
 import {
   team,
   team__heading,
-  team__intro,
-  team__member,
-  team__img,
-  team__name,
-  team__title
+  team__intro, team__member, team__img, team__name, team__title
 } from './team-bar.module.scss';
-import TeamMember from "./team-member";
-const TeamBar = () => {
+
+const TeamBar = ({ images }) => {
   return (
     <section className={`container-fluid ${team}`}>
       <div className="row middle-xs center-xs start-sm">
@@ -19,18 +15,24 @@ const TeamBar = () => {
           <p className={team__intro}>Qualified providers, ready to work with you.</p>
         </div>
         <div className="col-xs-12 col-sm center-xs">
-          <TeamMember
-            img="../images/jacie.jpg"
-            name="Jacie Currie"
-            title="Speech Therapy & Language Pathology"
-          />
+          <div className={team__member}>
+            <StaticImage
+              src="../images/jacie.jpg"
+              className={team__img}
+            />
+            <span className={team__name}>Jacie Curry</span>
+            <span className={team__title}>Speech Therapy & Language Pathology</span>
+          </div>
         </div>
         <div className="col-xs-12 col-sm center-xs">
-          <TeamMember
-            img="../images/sunny.jpg"
-            name="Sunny Biggers"
-            title="Educational Assessments"
-          />
+          <div className={team__member}>
+            <StaticImage
+              src="../images/sunny.jpg"
+              className={team__img}
+            />
+            <span className={team__name}>Sunny Biggers</span>
+            <span className={team__title}>Educational Assessments</span>
+          </div>
         </div>
       </div>
     </section>
