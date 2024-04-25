@@ -18,9 +18,9 @@ const Hero = () => {
         <div className="col-xs-12 col-sm-6 center-xs">
           <StaticImage
             src="../images/kingdom-849.png"
+            alt=""
             className={hero__img}
-          >
-          </StaticImage>
+          />
         </div>
       </div>
     </section>
