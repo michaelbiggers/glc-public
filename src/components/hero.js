@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import heroImg from "../images/coworkers.png";
 import { hero, hero__heading, hero__intro, hero__img } from './hero.module.scss';
 
 const Hero = () => {
@@ -16,11 +16,7 @@ const Hero = () => {
           <p><a className="btn btn--primary" href="#who-we-help">Who We Can Help</a></p>
         </div>
         <div className="col-xs-12 col-sm-6 center-xs">
-          <StaticImage
-            src="../images/kingdom-849.png"
-            alt=""
-            className={hero__img}
-          />
+        <img src = {heroImg} alt="" className={hero__img} />
         </div>
       </div>
     </section>
