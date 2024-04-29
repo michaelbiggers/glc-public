@@ -1,3 +1,10 @@
+$blue: #347783;
+$yellow: #f5b721;
+$yellow-light: #{lighten($yellow, 25%)};
+$red: #d0561b;
+$brown: #817e5b;
+$neutral: #fbf6f2;
+
 .hero {
   position: relative;
   padding: 10vw 0;
@@ -6,10 +13,11 @@
     font-size: 88px;
     margin-block-start: 0;
     margin-block-end: 0;
+    color:$blue;
   }
 
   &__intro {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   &__img {
