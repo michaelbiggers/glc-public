@@ -3,6 +3,7 @@ $yellow: #f5b721;
 $red: #d0561b;
 $brown: #817e5b;
 $neutral: #fbf6f2;
+$black: #2f4043;
 $yellow-light: #{lighten($yellow, 30%)};
 
 :root {
@@ -14,8 +15,12 @@ body {
   margin: 0;
 }
 
-.text--light {
-  color: $neutral;
+.p0 {
+  padding: 0 !important;
+}
+
+.m0 {
+  margin: 0 !important;
 }
 
 /** Typography **/
@@ -44,25 +49,45 @@ p {
 
 .btn {
   background: $blue;
-  display:inline-block;
+  display: inline-block;
   padding: 22px;
   border-radius: 111px;
   color: white;
   text-decoration: none;
-  font-weight:bold;
+  font-weight: bold;
 
   &--primary {
     font-size: 18px;
   }
 }
 
+.bg--pattern {
+  background-color: #fbf6f2;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #efebe7 0, #efebe7 1px, #fbf6f2 0, #fbf6f2 50%);
+}
+
 /** Home page **/
-.rounded-top {
-  border-radius: 30px 30px 0 0;
-  margin-top: -30px;
+.testimonial {
+  &__content {
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+
+    p {
+      font-size: 24px;
+      color: $black;
+
+    }
+
+    h4 {
+      color: $red;
+    }
+  }
 }
 
 footer {
-  background: black;
+  background: $black;
   padding: 48px;
 }
