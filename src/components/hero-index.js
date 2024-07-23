@@ -1,8 +1,8 @@
 import React from "react";
 import heroImg from "../images/coworkers.png";
-import { hero, hero__heading, hero__intro, hero__img } from './hero.module.scss';
+import { hero, hero__heading, hero__intro, hero__img } from './hero-index.module.scss';
 
-const Hero = () => {
+const HeroIndex = () => {
   return (
     <section className={`container ${hero}`}>
       <div className="row center-xs start-sm">
@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="row center-xs start-sm">
         <div className="col-xs-12 col-sm-6">
           <p className={hero__intro}>Learning assessments and <br />speech therapy for all ages.</p>
-          <p><a className="btn btn--primary" href="#who-we-help">Who We Can Help</a></p>
+          <p><a className="btn btn--primary" href="#clients">Who We Can Help</a></p>
         </div>
         <div className="col-xs-12 col-sm-6 center-xs">
         <img src = {heroImg} alt="" className={hero__img} />
@@ -23,4 +23,4 @@ const Hero = () => {
   )
 }
 
-export default Hero;
+export default HeroIndex;

@@ -1,15 +1,38 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import Hero from "../components/hero";
-import TeamBar from "../components/team-bar";
+import HeroIndex from "../components/hero-index";
+import TeamBar from '../components/team-bar'
 import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
 	return (
 		<main className="main">
 			<Layout>
-				<Hero />
+				<HeroIndex 
+					heading = "Come Grow With Us"
+				/>
 				<TeamBar />
+				<section className = 'container' id = 'clients'>
+					<div className = 'row center-xs'>
+						<div className = 'col-xs-12'>
+							<h2>Who do we typically work with?</h2>
+						</div>
+						<div className = 'col-xs-12 col-sm-6'>
+							<ul>
+								<li>One</li>
+								<li>One</li>
+								<li>One</li>
+							</ul>
+						</div>
+						<div className = 'col-xs-12 col-sm-6'>
+						<ul>
+								<li>Two</li>
+								<li>Two</li>
+								<li>Two</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 				<section class="container-fluid testimonial p0">
 					<div className="row center-xs middle-xs bg--pattern">
 						<div className="col-xs-12 col-sm-6 p0">
